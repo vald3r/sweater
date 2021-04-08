@@ -1,4 +1,5 @@
 .idea/*
-target/classes
-target/*
-/target/
+.classpath
+.project
+.settings/
+*/target/*

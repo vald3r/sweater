@@ -10,10 +10,10 @@ public class Message {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
-
     private String text;
-
     private String tag;
+    private String author;
+
 
     public Message() {
     }
@@ -21,6 +21,10 @@ public class Message {
     public Message(String text, String tag) {
         this.text = text;
         this.tag = tag;
+    }
+
+    public String getAuthor() {
+        return author;
     }
 
     public Integer getId() {

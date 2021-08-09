@@ -54,11 +54,11 @@ public class MainController {
             Model model,
             @RequestParam("file") MultipartFile file
     ) throws IOException {
-        if(bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             Map<String, String> errorMap = ControllerUtils.getErrors(bindingResult);
             model.mergeAttributes(errorMap);
             model.addAttribute("message", message);
-        }else {
+        } else {
             message.setAuthor(user);
             if (file != null && !file.getOriginalFilename().isEmpty()) {
                 File uploadDir = new File(uploadPath);

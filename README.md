@@ -3,9 +3,9 @@
 Just a project for study.
 Simple clone of twitter.
 
-Stack: Spring Boot MVC, Mail, Security.
+Stack: Spring Boot MVC, Mail, Security, Validation.
        Hibernate, JPA, PgSQL, Flyway.
-       Freemaker with Bootstrap on front.
+       Freemarker with Bootstrap on front.
 
 Description:
 On this site authorized users can add messages which contains text, tag and pictures. You can filter messages by tag.

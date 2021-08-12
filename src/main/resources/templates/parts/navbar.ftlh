@@ -13,9 +13,18 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/">Home</a>
                 </li>
+                <#if user??>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/main">Messages</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/user-messages/${currentUserId}">My Messages</a>
+                </li>
+                <#else>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/login">Login</a>
+                    </li>
+                </#if>
                 <#if isAdmin>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="/user">User list</a>
